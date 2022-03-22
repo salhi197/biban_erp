@@ -1,0 +1,40 @@
+<div id="" class="ticket">
+                    <div class="ticket-header">
+                      <div class="ticket-logo">
+                        <img src="{{asset('img/ticket-imag.png')}}" class="ticket-logo-image" alt="">
+                      </div>
+                    </div>
+                    <div class="ticket-body">
+                      <div class="ticket-airports info-container">
+                        <div class="ticket-airport-depart" >
+                          <span class="ticket-airport-departName detail" style="align:center;"><?php echo date('Y-m-d H:i:s');
+                            ?></span>
+                        </div>
+                      </div>
+                      <div class="ticket-flightDetails info-container">
+                        <div class="ticket-flightNumber">
+                          <span class="ticket-flightNumberDetail detail" >Rencontres Equipe Nationale</span>
+                        </div>
+                      </div>
+                      <div class="ticket-seats info-container">
+                        <div class="ticket-class" style="justify-content:center;" >
+                          <span class="ticket-className detail" style="text-align:center;">ALGERIE - ZIMBABWE</span>   
+                        </div>
+                      </div> 
+                      <div class="qrcodecontainer">
+                        <div class="qrcode-child">
+                            <span class="ticket-className detail" >Place : A002</span>
+                            <span class="ticket-className detail" >Zone:10</span>                           
+                        </div>
+                        <div class="qrcode-qrcode">
+                            <?php $path = "/storage/app/public/qrcodes/".$qrcode.".svg";?>
+                            <img src="{{$path}}"  alt="QR Code">
+                        </div>
+                        <div class="qrcode-child">
+                            <span class="ticket-className detail">Billet : 197</span>
+                            <span class="ticket-className detail">Abdeljilali Soal</span>                           
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="ticket-footer"></div>  
+                  </div>  
