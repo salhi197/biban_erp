@@ -1,0 +1,161 @@
+
+.ticket {
+    flex-direction: column;
+    margin-top: -250px;
+	width: 320px;
+	height: 150px;
+	border-radius: 10px;
+	background-color: #fafefe;
+}
+
+.label {
+	margin-bottom: .75rem;
+	color: #4a4a4a;
+	font-size: 0.9rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.detail {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.label,
+.detail {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+.info-container {
+	display: flex;
+    justify-content:center;
+    text-align:center;
+	margin-bottom: 2rem;
+	max-height: 80px;
+	
+}
+
+.ticket-header,
+.ticket-body,
+.ticket-footer {
+	padding: 1.5rem;
+}
+
+.ticket-header {
+	display: flex;
+	border-bottom: 1px solid #eaeaea;
+	position: relative;
+	
+}
+
+.ticket-logo,
+.ticket-boarding {
+	font-size: 1.4rem;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.ticket-logo-image {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.ticket-boarding {
+	font-size: 0;
+	max-width: 35%;
+	animation: blink 2s ease-in-out infinite;
+}
+
+.ticket-boarding-text.label {
+	display: block;
+	font-size: 1.4rem;
+	width: 100%;
+	text-align: center;
+	margin-bottom: .375rem;
+	text-transform: uppercase;
+}
+
+.ticket-boarding-date,
+.ticket-boarding-hours {
+	font-size: 1.2rem;
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+}
+
+.ticket-body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.ticket-airports {
+    text-align:center;
+	display: flex;
+}
+
+.ticket-airport-anim {
+	width: 40%;
+	height: 80px;
+	position: relative;
+}
+
+.ticket-plane {
+	height: 40px;
+	width: 40px;
+	object-fit: contain;
+	background-image: url('https://res.cloudinary.com/snitramordep/image/upload/v1541791026/black-plane.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	
+	animation: anim 2s infinite;
+}
+
+.ticket-qrCode {
+	width: 40%;
+	margin: 0 auto;
+	max-height: none;
+	flex-grow: 1;
+	display: flex;
+}
+
+.ticket-qrCodeImage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	opacity: .7;
+	align-self: center; 
+}
+
+
+
+.ticket-footer {
+	box-shadow:0 25px 30px -15px rgba(0, 0, 0, 0.4);
+	position: relative;
+	border-top: 1px solid #eaeaea; 	
+}
+
+
+.qrcodecontainer{
+    width:100%;
+    height:150px;
+    
+    display: flex;
+}
+.qrcode-qrcode{
+    width:60%;
+}
+.qrcode-child{
+    line-height: 10%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width:20%;
+}
